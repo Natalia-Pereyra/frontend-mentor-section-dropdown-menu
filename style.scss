@@ -1,0 +1,149 @@
+@import "./variables";
+
+body {
+    min-width: 100%;
+    font-family: $font;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+p {
+    color: $medium-gray;
+    margin: 20px;
+    line-height: 29px;
+    font-size: 16px;
+}
+#mobile-nav {
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    .snap-logo {
+    margin: 25px 20px;
+    }
+    .close-menu-icon {
+        margin: 25px 20px;
+        display: none;
+    }
+    .open-menu-burger {
+        margin: 25px 20px;
+    }
+    .close-menu-icon.open {
+        display: block;
+    }
+    .open-menu-burger.close {
+        display: none;
+    }
+}
+
+#prueba {
+    background-color: $almost-white;
+    height: 100vh;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .arrow {
+            margin: 15px;
+        }
+
+    #features {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 15px;
+    p {
+        padding: 0 10px;
+        color: $medium-gray;
+    }
+    .arrow-up {
+        display: none;
+    }
+    .arrow-up.open {
+        display: block;
+    }
+    .arrow-down.close {
+        display: none;
+    }
+    }
+    .dropdown-features {
+    overflow: hidden;
+    top: 60px;
+    left: 0;
+    display: none;
+    }
+    .dropdown-features.active {
+    display: block;
+    }
+
+    a {
+    text-decoration: none;
+    color: $medium-gray;
+    // margin: 15px;
+    }
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    color: $medium-gray;
+    span {
+        margin: 0 30px;
+        color: $medium-gray;
+    }
+}
+main {
+    position: relative;
+    .hero-img {
+        width: 100%;
+    }
+}
+#company {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    .arrow-up-company {
+            display: none;
+        }
+    
+        .arrow-up-company.open {
+            display: inline-block;
+        }
+    
+        .arrow-down-company.close {
+            display: none;
+        }
+}
+.dropdown-company {
+    display: none;
+    overflow: hidden;
+    top: 120px;
+    left: 0;
+}
+.dropdown-company.active {
+    display: block;
+}
+
+button {
+    border-style: none;
+    background-color: $almost-white;
+    color: $medium-gray;
+    font-size: 1em;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    // img {
+    //     width: fit-content;
+    // }
+}
+
