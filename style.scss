@@ -1,8 +1,13 @@
 @import "./variables";
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
 body {
     min-width: 100%;
-    font-family: $font;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -17,7 +22,7 @@ p {
 #mobile-nav {
     display: none;
 }
-nav {
+#nav-icons {
     display: flex;
     justify-content: space-between;
 
@@ -39,26 +44,27 @@ nav {
     }
 }
 
-#prueba {
+#dropdown-mobile-menu {
     background-color: $almost-white;
     height: 100vh;
-    width: 70%;
+    width: 65%;
     position: absolute;
     right: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    z-index: 1;
 
     .arrow {
-            margin: 15px;
+            margin: 0 15px;
         }
 
     #features {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 0 15px;
+   
     p {
         padding: 0 10px;
         color: $medium-gray;
@@ -77,6 +83,7 @@ nav {
     overflow: hidden;
     top: 60px;
     left: 0;
+    padding-left: 45px;
     display: none;
     }
     .dropdown-features.active {
@@ -88,6 +95,25 @@ nav {
     color: $medium-gray;
     // margin: 15px;
     }
+    .bottom-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 30px;
+
+        #login:hover {
+            border: 1px solid $medium-gray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #register:hover {
+                border: 1px solid $medium-gray;
+                border-radius: 10px;
+                padding: 10px;
+            }
+    }
 }
 
 li {
@@ -96,6 +122,7 @@ li {
     align-items: center;
     margin: 15px;
     color: $medium-gray;
+    cursor: pointer;
     span {
         margin: 0 30px;
         color: $medium-gray;
@@ -105,12 +132,12 @@ main {
     position: relative;
     .hero-img {
         width: 100%;
+        margin-bottom: 50px;
     }
 }
 #company {
     display: flex;
     align-items: center;
-    margin: 0 15px;
     .arrow-up-company {
             display: none;
         }
@@ -128,6 +155,7 @@ main {
     overflow: hidden;
     top: 120px;
     left: 0;
+    padding-left: 45px;
 }
 .dropdown-company.active {
     display: block;
@@ -138,12 +166,27 @@ button {
     background-color: $almost-white;
     color: $medium-gray;
     font-size: 1em;
+    margin: 10px 15px;
     cursor: pointer;
 }
-footer {
-    display: flex;
-    // img {
-    //     width: fit-content;
-    // }
+#learn-more-btn {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 17px 25px;
+    font-size: 15px;
+    cursor: pointer;
 }
-
+#footer-icons {
+    display: flex;
+    margin: 50px 0 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+        width: 18%;
+    }
+    
+}
+div#footer-icons img:nth-of-type(2) {
+    width: 13%;
+}

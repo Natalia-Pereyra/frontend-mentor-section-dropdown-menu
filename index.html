@@ -15,64 +15,75 @@
 <body>
 
 <nav>
-  <img class="snap-logo" src="./images/logo.svg" alt="">
-  <div id="mobile-menu">
-    <img class="open-menu-burger" src="./images/icon-menu.svg" alt="open menu">
-    <img class="close-menu-icon" src="./images/icon-close-menu.svg" alt="close menu">
-  </div>
-</nav>
+    <div id="nav-icons">
+      <img class="snap-logo" src="./images/logo.svg" alt="">
+      <div id="mobile-menu">
+        <img class="open-menu-burger" src="./images/icon-menu.svg" alt="open menu">
+        <img class="close-menu-icon" src="./images/icon-close-menu.svg" alt="close menu">
+      </div>
+    </div>
 
-<main id="main">
-
-  <div id="mobile-nav">
-    <div id="prueba">
-
+    <div id="mobile-nav">
+      <div id="dropdown-mobile-menu">
+    
         <button id="features"> <a href="">Features</a>
           <img class="arrow-up arrow" src="./images/icon-arrow-up.svg" alt="Features">
           <img class="arrow-down arrow" src="./images/icon-arrow-down.svg" alt="Features">
         </button>
-      
+    
         <div class="dropdown-features">
           <ul>
-            <li> <img src="./images/icon-todo.svg" alt="Todo List"> <span>Todo List</span> </li>
-            <li> <img src="./images/icon-calendar.svg" alt="Calendar"> <span>Calendar</span></li>
-            <li> <img src="./images/icon-reminders.svg" alt="Reminders"><span>Reminders</span></li>
-            <li> <img src="./images/icon-planning.svg" alt="Planning"><span>Planning</span></li>
+            <li> <a href="#"><img src="./images/icon-todo.svg" alt="Todo List"> <span>Todo List</span></a> </li>
+            <li> <a href="#"><img src="./images/icon-calendar.svg" alt="Calendar"> <span>Calendar</span></a> </li>
+            <li> <a href="#"><img src="./images/icon-reminders.svg" alt="Reminders"><span>Reminders</span></a></li>
+            <li> <a href="#"><img src="./images/icon-planning.svg" alt="Planning"><span>Planning</span></a></li>
           </ul>
         </div>
-
-
-        <button class="btn" id="company"> <a href="">Company</a> 
-        <img class="arrow-up-company arrow" src="./images/icon-arrow-up.svg" alt="Company">
-        <img class="arrow-down-company arrow" src="./images/icon-arrow-down.svg" alt="Company">
+    
+    
+        <button class="btn" id="company"> <a href="">Company</a>
+          <img class="arrow-up-company arrow" src="./images/icon-arrow-up.svg" alt="Company">
+          <img class="arrow-down-company arrow" src="./images/icon-arrow-down.svg" alt="Company">
         </button>
-
+    
         <div class="dropdown-company">
           <ul>
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
         </div>
     
         <button><a href="#">Careers</a></button>
         <button><a href="#">About</a></button>
-   </div>
-</div>
+    
+        <div class="bottom-btns">
+          <button id="login">Login</button>
+          <button id="register">Register</button>
+        </div>
+      </div>
+    </div>
+</nav>
 
-<header>
-  <img class="hero-img" src="./images/image-hero-mobile.png" alt="">
-</header>
-<h1>Make remote work</h1>
-<p>Get your team in sync, no matter your location. Streamline processes, cretate team rituals, and watch productivity soar.</p>
-<button>Learn More</button>
+<main id="main">
+
+     <header>
+       <img class="hero-img" src="./images/image-hero-mobile.png" alt="">
+       <h1>Make remote work</h1>
+     </header>
+
+   <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+   <button id="learn-more-btn">Learn More</button>
+
 </main>
 
 <footer>
-<img src="./images/client-audiophile.svg" alt="">
-<img src="./images/client-databiz.svg" alt="">
-<img src="./images/client-meet.svg" alt="">
-<img src="./images/client-maker.svg" alt="">
+  <div id="footer-icons">
+    <img src="./images/client-databiz.svg" alt="databiz">
+<img src="./images/client-audiophile.svg" alt="audiophile">
+<img src="./images/client-meet.svg" alt="meet">
+<img src="./images/client-maker.svg" alt="maker">
+</div>
 </footer>
   
   <!-- <div class="attribution">
